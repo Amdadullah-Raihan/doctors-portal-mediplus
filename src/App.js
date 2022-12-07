@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './components/Header';
 import Footer from './pages/Footer';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -12,9 +13,11 @@ function App() {
       <BrowserRouter>
         <Header></Header>
         <Routes>
-            <Route path='/' element={<Home></Home>}></Route>
+            <Route exact path='/' element={<Home></Home>}></Route>
             <Route path='/services' element></Route>
 
+
+            <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
