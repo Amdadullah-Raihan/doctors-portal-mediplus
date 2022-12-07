@@ -1,0 +1,15 @@
+.service-card{
+    height: auto;
+    display: flex;
+}
+.service-card h1, p{
+    color: black;
+}
+.service-card-logo i{
+    color: #0B5ED7;
+    font-size: 50px;
+    padding:0 30px;
+}
+.service-card-contents{
+    text-align: left;
+}

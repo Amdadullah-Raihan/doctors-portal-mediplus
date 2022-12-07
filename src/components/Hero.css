@@ -27,7 +27,11 @@
    align-items: center;
    justify-content: flex-start;
 }
-.hero-section h1, p {
+.hero-section h1{
+    color: white;
+    z-index: 3;
+}
+.hero-section p{
     color: white;
     z-index: 3;
 }

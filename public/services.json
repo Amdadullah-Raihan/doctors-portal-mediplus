@@ -1,26 +1,32 @@
 [
     {   "id":"1",
         "title":"Genaral Treatment",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
-    }
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "icon":"fa-solid fa-list"
+    },
     {   "id":"2",
         "title":"Teeth Whitening",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
-    }
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "icon":"fa-solid fa-tooth"
+    },
     {   "id":"3",
         "title":"Heart Surgery",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
-    }
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "icon":"fa-solid fa-heart-pulse"
+    },
     {   "id":"4",
-        "title":"Genaral Treatment",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
-    }
+        "title":"Ear Treatment",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "icon":"fa-solid fa-ear-listen"
+    },
     {   "id":"5",
-        "title":"Genaral Treatment",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
-    }
+        "title":"Vission Treatment",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "icon": "fa-solid fa-eye"
+    },
     {   "id":"6",
-        "title":"Genaral Treatment",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+        "title":"Blood Transfusion",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "icon": "fa-solid fa-hand-holding-medical"
     }
 ]
