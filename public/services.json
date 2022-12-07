@@ -1,0 +1,26 @@
+[
+    {   "id":"1",
+        "title":"Genaral Treatment",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    }
+    {   "id":"2",
+        "title":"Teeth Whitening",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    }
+    {   "id":"3",
+        "title":"Heart Surgery",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    }
+    {   "id":"4",
+        "title":"Genaral Treatment",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    }
+    {   "id":"5",
+        "title":"Genaral Treatment",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    }
+    {   "id":"6",
+        "title":"Genaral Treatment",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    }
+]
