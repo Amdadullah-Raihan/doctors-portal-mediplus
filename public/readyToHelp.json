@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "icon":"fa-solid fa-truck-medical",
+        "title":"Emergency Help",
+        "description":"Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
+    },
+    {
+        "id":"2",
+        "icon":"fa-solid fa-house-medical",
+        "title":"Enriched Pharmacy",
+        "description":"Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
+    },
+    {
+        "id":"3",
+        "icon":"fa-regular fa-stethoscope",
+        "title":"Medical Treatment",
+        "description":"Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
+    }
+]
