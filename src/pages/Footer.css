@@ -1,4 +1,8 @@
 .footer-section{
-    height: 50vh;
+    height: 60vh;
     margin-bottom: 0px;
+}
+.footer-section p{
+    opacity: 1;
+    color: white;
 }

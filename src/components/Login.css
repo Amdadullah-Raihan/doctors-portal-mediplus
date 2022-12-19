@@ -1,0 +1,10 @@
+.google-logo{
+    width: 30px;
+    margin: 5px;
+}
+.login-pic{
+    background-image: url("../images/login.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}

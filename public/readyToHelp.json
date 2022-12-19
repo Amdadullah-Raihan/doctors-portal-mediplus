@@ -13,7 +13,7 @@
     },
     {
         "id":"3",
-        "icon":"fa-regular fa-stethoscope",
+        "icon":"fa-solid fa-stethoscope",
         "title":"Medical Treatment",
         "description":"Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
     }
