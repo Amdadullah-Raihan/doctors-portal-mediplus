@@ -7,7 +7,9 @@ import Header from './components/Header';
 import Footer from './pages/Footer';
 import NotFound from './pages/NotFound';
 import Login from './components/Login';
-
+import Register from './components/Register';
+import Doctors from './pages/Doctors';
+import './utilities.css'
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,8 @@ function App() {
             <Route exact path='/' element={<Home></Home>}></Route>
             <Route path='/services' element></Route>
             <Route path='/login' element={<Login></Login>}></Route>
+            <Route path='/register' element={<Register></Register>}></Route>
+            <Route path='/doctors' element={<Doctors></Doctors>}></Route>
 
             <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>

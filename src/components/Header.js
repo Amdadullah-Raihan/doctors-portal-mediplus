@@ -7,7 +7,7 @@ import logo from '../images/logo.png'
 import './Header.css'
 
 const Header = () => {
-    const {user, handleSignOut} = useFirebase();
+    const { user, handleSignOut } = useFirebase();
     console.log(user);
 
     let activeStyle = {
@@ -57,6 +57,16 @@ const Header = () => {
                                 Services
                             </NavLink>
                         </Nav.Link>
+                        <Nav.Link>
+                            <NavLink
+                                to="/appointments"
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }
+                            >
+                                Appointments
+                            </NavLink>
+                        </Nav.Link>
 
 
 
@@ -73,7 +83,7 @@ const Header = () => {
                                             <Popover id={`popover-positioned-${placement}`}>
                                                 <Popover.Header className='' as="h3">
                                                     <img className='border rounded-circle' src={user.photoURL} alt="Profile pic" /> <br />
-                                                    <p>{user.displayName}</p>
+                                                    <p className='fw-bold'>{user.displayName}</p>
                                                 </Popover.Header>
                                                 <Popover.Body className='popover-body'>
                                                     <Link>Your Appointments</Link> <br />
@@ -85,16 +95,16 @@ const Header = () => {
                                     >
                                         <Button variant="bg-light text-dark ">
                                             {user.displayName}
-                                        <img className='border border-primary rounded-circle ms-2' src={user.photoURL} height='30px' width='30px' alt="Pro" /></Button>
+                                            <img className='border border-primary rounded-circle ms-2' src={user.photoURL} height='30px' width='30px' alt="Pro" /></Button>
                                     </OverlayTrigger>
                                 ))}
-                            </div> :  <div>
-                                    <Link to='/appoinments'><button className='btn border border-primary'>Appointments</button></Link>
-                                    <Link to='/login'><button className="btn border border-primary">Log in</button></Link>
+                            </div> : <div>
+                                <Link to='/register'><button className='btn border border-primary'>Register</button></Link>
+                                <Link to='/login'><button className="btn border border-primary">Log in</button></Link>
                             </div>
                         }
-                       
-                       
+
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>

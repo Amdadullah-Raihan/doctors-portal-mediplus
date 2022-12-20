@@ -1,8 +1,29 @@
+
+
 .footer-section{
-    height: 60vh;
-    margin-bottom: 0px;
+    height: 50vh;
 }
 .footer-section p{
     opacity: 1;
     color: white;
+    text-align: start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.quick-links-container{
+    margin-top: 30px;
+}
+.quick-link{
+    color:white;
+    margin-left: 5px;
+    text-decoration: none;
+   
+
+}
+.quick-link:hover{
+    color: aquamarine;
+}
+
+.footer-news-letter ::placeholder{
+    color:white;
 }
