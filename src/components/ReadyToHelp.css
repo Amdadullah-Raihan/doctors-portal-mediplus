@@ -2,16 +2,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+.emergency-service-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
 .emergency-service-card i{
-    font-size: 40px;
-    color: #1A76D1;
-    margin-bottom: 15px;
     height: 80px;
     width: 80px;
+    color: #1A76D1;
+    font-size: 3.5rem;
+    height: 100px;
+    width: 100px;
     border: 1px solid lightgray;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content:center;
-    margin: 0 auto;
+    margin:20px  0;
+    /* padding: 10px; */
 }

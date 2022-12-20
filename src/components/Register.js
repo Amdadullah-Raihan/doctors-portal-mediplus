@@ -16,11 +16,11 @@ const Register = () => {
                     <Col sm={12} md={6} lg={6} className=' my-5 ps-5 h-100 d-flex flex-column '>
                         <h3> Register </h3>
 
-                        <input className='my-2 p-2 border  ' placeholder='Enter your email' type="text" name="" id="" required />
-                        <input className='my-2 p-2 border' placeholder='Enter your password' type="text" name="" id="" />
-                        <input className='my-2 p-2 border' placeholder='Confirm your password' type="text" name="" id="" required />
+                        <input className='my-2 p-2 border rounded' placeholder='Enter your email' type="text" name="" id="" required />
+                        <input className='my-2 p-2 border rounded' placeholder='Enter your password' type="text" name="" id="" />
+                        <input className='my-2 p-2 border rounded' placeholder='Confirm your password' type="text" name="" id="" required />
 
-                        <input className='my-2 p-2 btn btn-primary' type="submit" name="" value="Register" id="" required />
+                        <input className='my-2 p-2 border border-none rounded primary-bg text-light' type="submit" name="" value="Register" id="" required />
                         <p>Already Registered?</p>
                         <p><Link to='/login'> Log in here</Link></p>
                         <hr className='w-100' />

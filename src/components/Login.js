@@ -22,10 +22,10 @@ const Login = () => {
                     <Col sm={12} md={6} lg={6} className=' my-5 ps-5 h-100 d-flex flex-column '>
                         <h3>Log in </h3>
 
-                        <input className='my-2 p-2 border  ' placeholder='Enter your email' type="text" name="" id="" />
-                        <input className='my-2 p-2 border' placeholder='Enter your password' type="text" name="" id="" />
+                        <input className='my-2 p-2 border  rounded ' placeholder='Enter your email' type="text" name="" id="" />
+                        <input className='my-2 p-2 border rounded' placeholder='Enter your password' type="text" name="" id="" />
 
-                        <input className='my-2 p-2 btn btn-primary' type="button" name="" value="Log in" id="" />
+                        <input className='my-2 p-2 border-none border rounded primary-bg text-light' type="button" name="" value="Log in" id="" />
                         <p>Don't have an account?</p>
                         <p><Link to='/register'> Register here</Link></p>
                         <hr className='w-100' />
