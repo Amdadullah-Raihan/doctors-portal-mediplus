@@ -1,13 +1,18 @@
+import userEvent from '@testing-library/user-event';
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, OverlayTrigger, Popover } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
+import useFirebase from '../hooks/useFirebase';
 import logo from '../images/logo.png'
+import './Header.css'
 
 const Header = () => {
+    const {user, handleSignOut} = useFirebase();
+    console.log(user);
 
     let activeStyle = {
         textDecoration: "underline",
-        color:"blue"
+        color: "#3187D7"
     };
     let activeClassName = "underline";
 
@@ -38,7 +43,7 @@ const Header = () => {
                                     isActive ? activeStyle : undefined
                                 }
                             >
-                               Doctors
+                                Doctors
                             </NavLink>
                         </Nav.Link>
 
@@ -57,8 +62,39 @@ const Header = () => {
 
                     </Nav>
                     <Nav>
-                        <Link to='/appoinments'><button className='btn border border-primary'>Appointments</button></Link>
-                        <Link to='/login'><button className="btn border border-danger">Log in  </button></Link>
+                        {
+                            user.email ? <div>
+                                {['bottom'].map((placement) => (
+                                    <OverlayTrigger
+                                        trigger="click"
+                                        key={placement}
+                                        placement={placement}
+                                        overlay={
+                                            <Popover id={`popover-positioned-${placement}`}>
+                                                <Popover.Header className='' as="h3">
+                                                    <img className='border rounded-circle' src={user.photoURL} alt="Profile pic" /> <br />
+                                                    <p>{user.displayName}</p>
+                                                </Popover.Header>
+                                                <Popover.Body className='popover-body'>
+                                                    <Link>Your Appointments</Link> <br />
+                                                    <button onClick={handleSignOut} className='btn'>Log Out</button>
+                                                    <Link></Link>
+                                                </Popover.Body>
+                                            </Popover>
+                                        }
+                                    >
+                                        <Button variant="bg-light text-dark ">
+                                            {user.displayName}
+                                        <img className='border border-primary rounded-circle ms-2' src={user.photoURL} height='30px' width='30px' alt="Pro" /></Button>
+                                    </OverlayTrigger>
+                                ))}
+                            </div> :  <div>
+                                    <Link to='/appoinments'><button className='btn border border-primary'>Appointments</button></Link>
+                                    <Link to='/login'><button className="btn border border-primary">Log in</button></Link>
+                            </div>
+                        }
+                       
+                       
                     </Nav>
                 </Navbar.Collapse>
             </Container>
