@@ -10,6 +10,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Doctors from './pages/Doctors';
 import './utilities.css'
+import Newsletter from './components/Newsletter';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
 
             <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
+        <Newsletter></Newsletter>
         <Footer></Footer>
       </BrowserRouter>
     </div>
