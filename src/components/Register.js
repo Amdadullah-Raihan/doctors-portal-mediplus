@@ -10,12 +10,12 @@ const Register = () => {
 
     return (
         
-            <div className='container my-lg-5 py-lg-5'>
+            <div className='container my-lg-5 '>
                 <div className='container mx-auto row row-cols-1 row-cols-lg-2 shadow my-3'>
                     <div className="login-pic container">
 
                     </div>
-                    <div className=' my-5 h-100 d-flex flex-column '>
+                    <div className=' my-5  h-100 d-flex flex-column '>
                         <h3> Register </h3>
 
                         <input className='my-2 p-2 border rounded' placeholder='Enter your email' type="text" name="" id="" required />
