@@ -3,6 +3,7 @@
 .footer-section{
     height: 50vh;
 }
+
 .footer-section p{
     opacity: 1;
     color: white;
@@ -26,4 +27,14 @@
 
 .footer-news-letter ::placeholder{
     color:white;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons i{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

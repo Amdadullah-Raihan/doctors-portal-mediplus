@@ -5,7 +5,9 @@ import useFirebase from '../hooks/useFirebase';
 import logo from '../images/GOOG-0ed88f7c.png'
 
 const Register = () => {
-    const {handleGoogleSignIn} = useFirebase();
+
+    const {handleGoogleSignIn, signUpNewUser} = useFirebase();
+
     return (
         <div className='m-5 p-5'>
             <Container className='shadow d-flex mx-auto overflow-hidden'>
