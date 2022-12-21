@@ -4,10 +4,10 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className=' primary-bg d-flex align-items-center justify-content-center text-light p-5 footer-section'>
+        <div className=' primary-bg d-flex align-items-center justify-content-center text-light p-lg-5 footer-section gy-5'>
 
-            <div className='container text-center row'>
-                <div className='col'>
+            <div className='container text-center row row-cols-1 row-cols-lg-3 my-5'>
+                <div className='col my-5'>
                     <h3 className='text-start'>About Us</h3>
                     <hr className='w-25 '/>
                     <p className='text-light'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fugiat sint soluta iusto est in ad porro assumenda quo nihil minima impedit tempore ex, repellat unde, nemo ullam praesentium inventore.</p>
@@ -19,7 +19,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className='col quick-links'>
+                <div className='col quick-links my-5'>
                     <h3 className='text-start'>Quick Links</h3>
                     <hr className='w-25 ' />
 
@@ -60,7 +60,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className='col'>
+                <div className='col my-5'>
                     <h3 className='text-start'>Newsletter</h3>
                     <hr className='w-25 ' />
                     <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>

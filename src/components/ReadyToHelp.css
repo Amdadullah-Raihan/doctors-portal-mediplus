@@ -1,7 +1,7 @@
-.ready-to-help-container{
+/* .ready-to-help-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
+} */
 .emergency-service-card{
     display: flex;
     flex-direction: column;

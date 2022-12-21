@@ -1,6 +1,6 @@
 .statistics-section{
     width: 100vw;
-    height: 60vh;
+    height: auto;
     background-image: url('../images/statistics.jpg');
     background-repeat: no-repeat;
     background-size:cover;
@@ -22,8 +22,8 @@
     opacity: 0.7;
 }
 .statistics-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
     z-index: 3;
     color: white;
 }
