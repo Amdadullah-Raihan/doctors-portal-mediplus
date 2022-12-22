@@ -1,0 +1,50 @@
+[
+    {
+        "id":"1",
+        "name":"Abdul Kader",
+        "designation":"ENT",
+        "img":"/src/images/team1.jpg"
+    },
+    {
+        "id":"2",
+        "name":"Abdul Kader",
+        "designation":"ENT",
+        "img":"/src/images/team1.jpg"
+    },
+    {
+        "id":"3",
+        "name":"Abdul Kader",
+        "designation":"ENT",
+        "img":"/src/images/team1.jpg"
+    },
+    {
+        "id":"4",
+        "name":"Abdul Kader",
+        "designation":"ENT",
+        "img":"/src/images/team1.jpg"
+    },
+    {
+        "id":"5",
+        "name":"Abdul Kader",
+        "designation":"ENT",
+        "img":"/src/images/team1.jpg"
+    },
+    {
+        "id":"6",
+        "name":"Abdul Kader",
+        "designation":"ENT",
+        "img":"/src/images/team1.jpg"
+    },
+    {
+        "id":"7",
+        "name":"Abdul Kader",
+        "designation":"ENT",
+        "img":"/src/images/team1.jpg"
+    },
+    {
+        "id":"8",
+        "name":"Abdul Kader",
+        "designation":"ENT",
+        "img":"/src/images/team1.jpg"
+    }
+]
