@@ -1,17 +1,13 @@
 import { useSSRSafeId } from '@react-aria/ssr';
 import React, { useEffect, useState } from 'react';
+import useServices from '../hooks/useServices';
 import sectionImg from "../images/section-img.png"
 import Service from './Service';
 import './ServiceSection.css'
 
 const ServiceSection = () => {
-    const [services, setServices] = useState();
-    useEffect(()=>{
-        fetch('./services.json')
-            .then(res=>res.json())
-            .then(data=>setServices(data))
-    },[])
-
+    const {services} = useServices();
+  
     return (
         <div className='sevice-section container py-5'>
             <h1>We Offer Different Services To Improve Your Health</h1>

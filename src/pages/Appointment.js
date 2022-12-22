@@ -26,30 +26,30 @@ const Appointment = () => {
                         <h3 className='text-start'>Working Hours</h3>
                         <tr>
                             <td>Saturday</td>
-                            <td> 9am-10pm</td>
+                            <td> 7am-9pm</td>
                         </tr>
                         <tr>
-                            <td>Saturday</td>
-                            <td> 9am-10pm</td>
+                            <td>Sunday</td>
+                            <td> 8am-10pm</td>
                         </tr>
                         <tr>
-                            <td>Saturday</td>
-                            <td> 9am-10pm</td>
+                            <td>Monday</td>
+                            <td> 9am-11pm</td>
                         </tr>
                         <tr>
-                            <td>Saturday</td>
-                            <td> 9am-10pm</td>
+                            <td>Tuesday</td>
+                            <td> 8am-10pm</td>
                         </tr>
                         <tr>
-                            <td>Saturday</td>
-                            <td> 9am-10pm</td>
+                            <td>Wednessday</td>
+                            <td> 11am-9pm</td>
                         </tr>
                         <tr>
-                            <td>Saturday</td>
-                            <td> 9am-10pm</td>
+                            <td>Thusday</td>
+                            <td> 6am-4pm</td>
                         </tr>
                         <tr>
-                            <td>Saturday</td>
+                            <td>Friday</td>
                             <td> 9am-10pm</td>
                         </tr>
                     </table>
