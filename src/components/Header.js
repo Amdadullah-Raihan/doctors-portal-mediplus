@@ -59,7 +59,7 @@ const Header = () => {
                         </Nav.Link>
                         <Nav.Link>
                             <NavLink
-                                to="/appointments"
+                                to="/appointment"
                                 style={({ isActive }) =>
                                     isActive ? activeStyle : undefined
                                 }

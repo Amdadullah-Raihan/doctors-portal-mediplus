@@ -11,6 +11,10 @@ import Register from './components/Register';
 import Doctors from './pages/Doctors';
 import './utilities.css'
 import Newsletter from './components/Newsletter';
+import Services from './pages/Services';
+import Appointment from './pages/Appointment';
+
+
 function App() {
   return (
     <div className="App">
@@ -18,10 +22,11 @@ function App() {
         <Header></Header>
         <Routes>
             <Route exact path='/' element={<Home></Home>}></Route>
-            <Route path='/services' element></Route>
+            <Route path='/services' element={<Services></Services>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/register' element={<Register></Register>}></Route>
             <Route path='/doctors' element={<Doctors></Doctors>}></Route>
+            <Route path='/appointment' element={<Appointment></Appointment>}></Route>
 
             <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
