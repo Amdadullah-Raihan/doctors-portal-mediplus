@@ -4,7 +4,7 @@ import './EmergencyContact.css'
 const EmergencyContact = () => {
     return (
         <div className='emergency-contact-section h-100 py-5' >
-           <div className="container my-5 py-5 w-50">
+           <div className="container my-5 py-5 ">
                 <div className="trasparent">
 
                 </div>

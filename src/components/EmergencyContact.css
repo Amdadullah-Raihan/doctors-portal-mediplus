@@ -19,6 +19,7 @@
 }
 
 .emg-contact-info{
+    position: relative;
     z-index: 3;
 }
 
