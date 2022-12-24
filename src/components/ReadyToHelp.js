@@ -19,7 +19,7 @@ const ReadyToHelp = () => {
                 {
                     emergencyServices.map(emergencyService=> <div className='emergency-service-card'>
                         <i className={emergencyService.icon}></i>
-                        <h3>{emergencyService.title}</h3>
+                        <h3 className='text-dark'>{emergencyService.title}</h3>
                         <p className='my-3'>{emergencyService.description}</p>
                     </div>)
                 }

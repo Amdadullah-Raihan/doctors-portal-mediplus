@@ -1,13 +1,14 @@
 .service-card{
     height: auto;
-    display: flex;
+    display:grid;
+    grid-template-columns: 2fr 3fr;
 }
 .service-card h1, p{
     color: black;
 }
 .service-card-logo i{
     color:#1A76D1;
-    font-size: 50px;
+    font-size: 2.5em;
     padding:0 30px;
 }
 .service-card-contents{

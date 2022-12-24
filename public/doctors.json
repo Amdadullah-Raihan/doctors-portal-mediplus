@@ -3,48 +3,48 @@
         "id":"1",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"/src/images/team1.jpg"
+        "img":"https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"2",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"/src/images/team1.jpg"
+        "img":"https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"3",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"/src/images/team1.jpg"
+        "img":"https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"4",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"/src/images/team1.jpg"
+        "img":"https://img.freepik.com/free-photo/medical-workers-covid-19-vaccination-concept-confident-professional-doctor-female-nurse-blue-scrubs-stethoscope-show-thumbs-up-assure-guarantee-best-quality-service-clinic_1258-57360.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"5",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"/src/images/team1.jpg"
+        "img":"https://img.freepik.com/premium-photo/covid-19-coronavirus-outbreak-healthcare-workers-pandemic-concept-middle-aged-doctor-white-coat-cross-arms-chest-ready-help-patients-prescribe-medication-smiling-cheerful_1258-61179.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"6",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"/src/images/team1.jpg"
+        "img":"https://img.freepik.com/free-photo/portrait-successful-young-doctor-with-folder-stethoscope_1262-12410.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"7",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"/src/images/team1.jpg"
+        "img":"https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"8",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"/src/images/team1.jpg"
+        "img":"https://img.freepik.com/free-photo/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini_1258-88108.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     }
 ]
