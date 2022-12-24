@@ -3,7 +3,7 @@ import './Service.css'
 
 const Service = ({service}) => {
     return (
-        <div className='service-card  p-3'>
+        <div className='service-card '>
             <div className="service-card-logo">
                 <i className={service.icon}></i>
             </div>
