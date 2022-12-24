@@ -3,13 +3,13 @@
         "id":"1",
         "name":"Abdul Kader",
         "designation":"ENT",
-        "img":"https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
+        "img":"https://img.freepik.com/free-photo/doctor-standing-with-folder-stethoscope_1291-16.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"2",
-        "name":"Abdul Munshi",
+        "name":"Batashi Begum",
         "designation":"Counselor",
-        "img":"https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
+        "img":"https://img.freepik.com/free-photo/portrait-doctor_144627-39390.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     },
     {
         "id":"3",
@@ -43,7 +43,7 @@
     },
     {
         "id":"8",
-        "name":"Bibi Kulsum",
+        "name":"Ruposhi Akhter",
         "designation":"Dermatologist",
         "img":"https://img.freepik.com/free-photo/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini_1258-88108.jpg?size=626&ext=jpg&ga=GA1.2.2110852358.1670430525"
     }
