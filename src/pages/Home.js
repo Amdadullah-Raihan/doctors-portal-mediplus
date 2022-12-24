@@ -1,6 +1,7 @@
 import React from 'react';
 import AdditionalInfo from '../components/AdditionalInfo';
 import DoctorsSection from '../components/DoctorsSection';
+import EmergencyContact from '../components/EmergencyContact';
 import Hero from '../components/Hero';
 import Newsletter from '../components/Newsletter';
 import ReadyToHelp from '../components/ReadyToHelp';
@@ -15,6 +16,7 @@ const Home = () => {
             <ReadyToHelp></ReadyToHelp>
             <Statistics></Statistics>
             <ServiceSection></ServiceSection>
+            <EmergencyContact></EmergencyContact>
             <DoctorsSection></DoctorsSection>
             
         </div>
