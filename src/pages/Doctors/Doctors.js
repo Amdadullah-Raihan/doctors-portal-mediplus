@@ -1,6 +1,6 @@
 import React from 'react';
-import Doctor from '../components/Doctor';
-import useDoctors from '../hooks/useDoctors';
+import Doctor from '../Footer/Doctor';
+import useDoctors from '../../hooks/useDoctors';
 
 const Doctors = () => {
     const {doctors} = useDoctors();

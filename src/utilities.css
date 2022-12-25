@@ -19,6 +19,22 @@
     padding: 10px 20px;
 
 }
+.primary-btn:hover{
+    background-color: #2C2D3F;
+    transition: all 500ms ease;
+
+}
+.secondary-btn{
+    color: #fff;
+    background-color: #2c2d3f;
+    border: none;
+    border-radius: 5px ;
+}
+.secondary-btn:hover{
+    background-color: #1A76D1;
+    transition: all 500ms ease;
+}
+
 .white-btn {
     color: #1A76D1;
     background-color: white;

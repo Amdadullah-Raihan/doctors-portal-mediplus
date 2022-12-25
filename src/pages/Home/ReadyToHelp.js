@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import sectionImg from '../images/section-img.png'
+import sectionImg from '../../images/section-img.png'
 import "./ReadyToHelp.css"
 
 const ReadyToHelp = () => {

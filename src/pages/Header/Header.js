@@ -2,8 +2,8 @@ import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { Button, Container, Nav, Navbar, OverlayTrigger, Popover } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
-import useFirebase from '../hooks/useFirebase';
-import logo from '../images/logo.png'
+import useFirebase from '../../hooks/useFirebase';
+import logo from '../../images/logo.png'
 import './Header.css'
 
 const Header = () => {
@@ -14,6 +14,7 @@ const Header = () => {
         textDecoration: "underline",
         color: "#3187D7"
     };
+
     let activeClassName = "underline";
 
 

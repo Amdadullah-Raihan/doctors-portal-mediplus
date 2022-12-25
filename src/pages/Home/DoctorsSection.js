@@ -1,7 +1,8 @@
 import React from 'react';
-import useDoctors from '../hooks/useDoctors';
-import Doctor from './Doctor';
-import sectionImg from "../images/section-img.png"
+import useDoctors from '../../hooks/useDoctors';
+import Doctor from '../Footer/Doctor';
+import sectionImg from "../../images/section-img.png"
+import { Link } from 'react-router-dom';
 
 const DoctorsSection = () => {
     const {doctors} = useDoctors();
@@ -17,6 +18,11 @@ const DoctorsSection = () => {
                     drs.map(dr => <Doctor doctor={dr}></Doctor>)
                 }
             </div>
+
+            <div>
+                <Link to='/doctors'><button className="primary-btn text-light border px-3 py-2 rounded">See Other Dcotors  <i className='fa-solid fa-arrow-right ms-1'></i></button></Link>
+            </div>
+
         </div>
     );
 };

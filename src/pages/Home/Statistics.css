@@ -1,7 +1,7 @@
 .statistics-section{
     width: 100vw;
     height: auto;
-    background-image: url('../images/statistics.jpg');
+    background-image: url('../../images/statistics.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     margin-top: 50px;
@@ -10,6 +10,9 @@
     display: flex;
     align-items: center;
     z-index: 1;
+}
+.statistics-section p{
+    opacity: 1;
 }
 .transparent-statistics-div{
     width: 100%;

@@ -10,8 +10,8 @@ const Hero = () => {
                 <h1>We provide medical services that everyone can trust!!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis, facilis fugit omnis iure magni.</p>
                 <div className="hero-btn-container">
-                    <button className='btn primary-bg text-light px-4 py-2'>Get Appointment</button>
-                    <button className='btn secondary-bg text-light px-3 py-2'>Learn More</button>
+                    <button className='primary-btn text-light px-4 py-2'>Get Appointment</button>
+                    <button className='secondary-btn text-light px-3 py-2'>Learn More</button>
                 </div>
             </div>
         </div>

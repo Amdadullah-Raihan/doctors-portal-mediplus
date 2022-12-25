@@ -2,17 +2,19 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Header from './components/Header';
-import Footer from './pages/Footer';
-import NotFound from './pages/NotFound';
-import Login from './components/Login';
-import Register from './components/Register';
-import Doctors from './pages/Doctors';
+import Home from './pages/Home/Home';
+import Header from './pages/Header/Header';
+import Footer from './pages/Footer/Footer';
+import NotFound from './pages/NotFound/NotFound';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import Doctors from './pages/Doctors/Doctors';
 import './utilities.css'
-import Newsletter from './components/Newsletter';
-import Services from './pages/Services';
-import Appointment from './pages/Appointment';
+import Newsletter from './pages/Home/Newsletter';
+import Services from './pages/Services/Services';
+import Appointment from './pages/Appointment/Appointment';
+import CardiacClinic from './pages/Home/Diagnosis/CardiacClinic';
+
 
 
 function App() {
@@ -21,7 +23,14 @@ function App() {
       <BrowserRouter>
         <Header></Header>
         <Routes>
-            <Route exact path='/' element={<Home></Home>}></Route>
+            <Route exact path='/' element={<Home></Home>}>
+              <Route path='link-1' element={<CardiacClinic></CardiacClinic>}></Route>
+              <Route path='link-2' element={<CardiacClinic></CardiacClinic>}></Route>
+              <Route path='link-3' element={<CardiacClinic></CardiacClinic>}></Route>
+              <Route path='link-4' element={<CardiacClinic></CardiacClinic>}></Route>
+              <Route path='link-5' element={<CardiacClinic></CardiacClinic>}></Route>
+            </Route>
+            <Route path='/home' element={<Home></Home>}></Route>
             <Route path='/services' element={<Services></Services>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/register' element={<Register></Register>}></Route>

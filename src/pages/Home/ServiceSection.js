@@ -1,8 +1,8 @@
 import { useSSRSafeId } from '@react-aria/ssr';
 import React, { useEffect, useState } from 'react';
-import useServices from '../hooks/useServices';
-import sectionImg from "../images/section-img.png"
-import Service from './Service';
+import useServices from '../../hooks/useServices';
+import sectionImg from "../../images/section-img.png"
+import Service from '../Services/Service';
 import './ServiceSection.css'
 
 const ServiceSection = () => {

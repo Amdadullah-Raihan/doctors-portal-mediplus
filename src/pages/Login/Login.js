@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../hooks/useFirebase';
-import logo from '../images/GOOG-0ed88f7c.png'
+import useFirebase from '../../hooks/useFirebase';
+import logo from '../../images/GOOG-0ed88f7c.png'
 import './Login.css'
 
 
