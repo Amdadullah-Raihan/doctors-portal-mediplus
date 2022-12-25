@@ -1,7 +1,8 @@
 .time-table-container table tr td{
     color: white;
     text-align: left;
-    padding: 12px 0px;
+    padding: 20px 0px;
+    box-sizing: border-box;
 }
 .time-table-container{
     

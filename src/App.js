@@ -14,6 +14,10 @@ import Newsletter from './pages/Home/Newsletter';
 import Services from './pages/Services/Services';
 import Appointment from './pages/Appointment/Appointment';
 import CardiacClinic from './pages/Home/Diagnosis/CardiacClinic';
+import Nurology from './pages/Home/Diagnosis/Nurology';
+import Dentistry from './pages/Home/Diagnosis/Dentistry';
+import Gastroenterology from './pages/Home/Diagnosis/Gastroenterology';
+import Orthopedagogy from './pages/Home/Diagnosis/Orthopedagogy';
 
 
 
@@ -25,10 +29,10 @@ function App() {
         <Routes>
             <Route exact path='/' element={<Home></Home>}>
               <Route path='link-1' element={<CardiacClinic></CardiacClinic>}></Route>
-              <Route path='link-2' element={<CardiacClinic></CardiacClinic>}></Route>
-              <Route path='link-3' element={<CardiacClinic></CardiacClinic>}></Route>
-              <Route path='link-4' element={<CardiacClinic></CardiacClinic>}></Route>
-              <Route path='link-5' element={<CardiacClinic></CardiacClinic>}></Route>
+              <Route path='link-2' element={<Nurology></Nurology>}></Route>
+              <Route path='link-3' element={<Dentistry></Dentistry>}></Route>
+              <Route path='link-4' element={<Gastroenterology></Gastroenterology>}></Route>
+              <Route path='link-5' element={<Orthopedagogy></Orthopedagogy>}></Route>
             </Route>
             <Route path='/home' element={<Home></Home>}></Route>
             <Route path='/services' element={<Services></Services>}></Route>

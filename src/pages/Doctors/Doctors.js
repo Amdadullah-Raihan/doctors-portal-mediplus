@@ -1,5 +1,5 @@
 import React from 'react';
-import Doctor from '../Footer/Doctor';
+import Doctor from './Doctor';
 import useDoctors from '../../hooks/useDoctors';
 
 const Doctors = () => {

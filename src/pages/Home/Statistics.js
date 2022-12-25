@@ -16,7 +16,7 @@ const Statistics = () => {
                 <div className="transparent-statistics-div">
 
                 </div>
-                <div className="statistics-container container py-5 row row-cols-1 g-3 row-cols-lg-4">
+                <div className="statistics-container container py-5 row row-cols-1 g-3 row-cols-md-4 row-cols-lg-4">
                     {
                         statistics.map(statistic => <Statistic key={statistic.id} statistic={statistic}></Statistic>)
                     }

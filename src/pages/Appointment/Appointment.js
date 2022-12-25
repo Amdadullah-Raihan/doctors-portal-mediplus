@@ -5,8 +5,8 @@ const Appointment = () => {
     return (
         <div className='container p-3 my-5 '>
             <div className='row row-cols-1 row-cols-lg-2 mx-auto'>
-                <div className='row row-cols-1 shadow mx-auto'>
-                    <div className='row row-cols-1 row-cols-lg-2 g-3 p-2 mb-3'>
+                <div className='row row-cols-1 shadow mx-auto my-3 py-5'>
+                    <div className='row row-cols-1 row-cols-lg-1 g-3 p-2 mb-3'>
                         <input className='px-3 py-2 border ' type="text" name="" id="" placeholder='Name' />
                         <input className='px-3 py-2 border ' type="text" name="" id="" placeholder='Name' />
                         <input className='px-3 py-2 border ' type="text" name="" id="" placeholder='Name' />
@@ -15,12 +15,12 @@ const Appointment = () => {
                         <input className='px-3 py-2 border ' type="text" name="" id="" placeholder='Name' />
 
                     </div>
-                    <div className='d-flex flex-column'>
-                        <textarea name="" placeholder='Write your message here' id="" cols="30" rows="5"></textarea>
-                        <button className=' border text-light primary-bg py-3'>Book An Appointment</button>
+                    <div className='w-100'>
+                        <textarea name="" placeholder='Write your message here' id="" className='h-50 w-100' ></textarea>
+                        <button className='primary-btn'>Book An Appointment</button>
                     </div>
                 </div>
-                <div className='primary-bg shadow p-4 time-table-container'>
+                <div className='primary-bg shadow my-3 py-5 time-table-container '>
                     <table  className='w-100'>
                         {/* <caption className='text-light fs-3 text-start'>Working Hours</caption> */}
                         <h3 className='text-start'>Working Hours</h3>

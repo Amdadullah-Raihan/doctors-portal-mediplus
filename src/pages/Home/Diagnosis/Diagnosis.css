@@ -4,11 +4,13 @@
     text-decoration: none;
     color: gray;
     margin-bottom: 20px;
+    word-wrap: wrap;
+
    
 }
 .diagnosis-link:active{
     color: #1a76d1;
-}
+} 
 .diagnosis-link i{
     font-size: 2em;
 }

@@ -1,14 +1,15 @@
-.navbar-section a{
+.navbar-section a {
     text-decoration: none;
     color: #2C2D3F;
-    font-weight:500;
+    font-weight: 500;
 }
 
 .navbar-section {
-    position: fixed;
-    top: 0px;
+    /* position: fixed;
+    top: 0px; */
     z-index: 11;
     background-color: #fff;
     width: 100vw;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1) ;
 
 }
