@@ -30,6 +30,7 @@
 .hero-section h1{
     color: white;
     z-index: 3;
+    text-transform: capitalize;
 }
 .hero-section p{
     color: white;

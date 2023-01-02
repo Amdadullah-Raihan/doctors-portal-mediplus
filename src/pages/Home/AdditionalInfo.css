@@ -30,7 +30,7 @@
        height: 800px;
     }
 }
-@media screen and (max-width:992px) {
+/* @media screen and (max-width:992px) {
     .additional-info-section{
         grid-template-columns: repeat(2, 1fr);
         margin: 10px;
@@ -39,4 +39,4 @@
     .additional-info-container{
        height: 800px;
     }
-}
+} */

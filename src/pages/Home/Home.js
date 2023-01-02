@@ -17,8 +17,8 @@ const Home = () => {
             <Statistics></Statistics>
             <ServiceSection></ServiceSection>
             <EmergencyContact></EmergencyContact>
-            <DoctorsSection></DoctorsSection>
             <Diagnosis></Diagnosis>
+            <DoctorsSection></DoctorsSection>
         </div>
     );
 };

@@ -5,7 +5,7 @@ const AdditionalInfo = () => {
     return (
        <div className='additional-info-container'>
             <div className=" mb-5 position-relative container">
-                <div className=' additional-info-section row '>
+                <div className=' additional-info-section'>
                     <div className='primary-bg additional-info-card text-start px-3 py-5'>
                         <p>Lorem, ipsum.</p>
                         <h3>Emergency Cases</h3>

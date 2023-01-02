@@ -8,7 +8,7 @@ import './Header.css'
 
 const Header = () => {
     const { user, handleSignOut } = useFirebase();
-    console.log(user);
+  
 
     let activeStyle = {
         textDecoration: "underline",

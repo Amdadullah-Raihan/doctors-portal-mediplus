@@ -28,6 +28,7 @@ function App() {
         <Header></Header>
         <Routes>
             <Route exact path='/' element={<Home></Home>}>
+              <Route path='/' element={<CardiacClinic></CardiacClinic>}></Route>
               <Route path='link-1' element={<CardiacClinic></CardiacClinic>}></Route>
               <Route path='link-2' element={<Nurology></Nurology>}></Route>
               <Route path='link-3' element={<Dentistry></Dentistry>}></Route>

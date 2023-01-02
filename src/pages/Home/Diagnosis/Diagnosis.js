@@ -13,7 +13,7 @@ const Diagnosis = () => {
                 <img src={sectionImg} alt="" />
             </div>
             <div className='container daignosis-links row row-cols-3 row-cols-lg-5 mx-auto'>
-
+                
                 <Link className='diagnosis-link' to='/link-1'> <i className='fa-solid fa-heart-pulse'></i> <small>Cardiac Clininc</small> </Link>
                 <Link className='diagnosis-link' to='/link-2'> <i className='fa-solid fa-brain'></i> <small>Neurology</small></Link>
                 <Link className='diagnosis-link' to='/link-4'> <i className='fa-solid fa-heart-pulse'></i> <small>Gastroenteroglogy</small></Link>
