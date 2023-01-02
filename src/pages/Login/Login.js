@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
-import logo from '../../images/GOOG-0ed88f7c.png'
+import googleLogo from '../../images/GOOG-0ed88f7c.png'
 import './Login.css'
 
 
@@ -65,7 +65,7 @@ const Login = () => {
                                 <p><Link to='/register'> Register here</Link></p>
                                 <hr className='w-100' />
                                 <p>or</p>
-                                <button onClick={handleGoogleSignIn} className="btn border border-primary  position-relative d-flex align-items-center rounded-pill p-2"> <img src={logo} alt="" className="google-logo start-0 position absolute" />  <p className='d-flex w-100 justify-content-center align-items-center'>Continue with Google</p></button>
+                                <button onClick={handleGoogleSignIn} className='extra-login-btn'> <img src={googleLogo} alt='' className='google-logo' />Continue with Google <></></button>
                             </div>
                         </div>
                     </div>

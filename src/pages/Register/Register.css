@@ -1,5 +1,23 @@
 .register-pic {
-    background-image: url("../images/doctor-patient.jpg");
+    background-image: url("../../images/doctor-patient.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+.extra-login-btn{
+    position: relative;
+    border:1px solid #1A76D1;
+    border-radius:29px;
+    height: 40px;
+    /* padding: 5px; */
+    background-color: #fff;
+    color:#2C2D3F ;
+    font-weight: bold;
+
+}
+
+.google-logo{
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 30px;
 }

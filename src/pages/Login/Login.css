@@ -1,6 +1,10 @@
 .google-logo{
+    
     width: 30px;
     margin: 5px;
+}
+.extra-login-btn{
+    width: 100%;
 }
 .login-pic{
     background-image: url("../../images/login.webp");
