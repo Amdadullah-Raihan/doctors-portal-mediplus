@@ -6,11 +6,11 @@ import logo from '../../images/GOOG-0ed88f7c.png'
 
 const Register = () => {
 
-    const {user, handleGoogleSignIn, signUpNewUser} = useFirebase();
+    const {user, handleGoogleSignIn, signUpNewUser,error,setError} = useFirebase();
     
     const [email, setEmail] = useState(' ')
     const [password, setPassword] = useState(' ')
-    const [error ,setError] = useState(' ')
+    
 
     const handleRegister = (e) => {
 

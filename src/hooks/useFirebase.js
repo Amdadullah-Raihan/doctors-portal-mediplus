@@ -8,6 +8,7 @@ const provider = new GoogleAuthProvider();
 
 const useFirebase = () => {
     const [user, setUser] = useState({})
+    const [error, setError] = useState(' ')
 
     const auth = getAuth();
 
@@ -17,6 +18,9 @@ const useFirebase = () => {
             .then(reuslt => {
                 setUser(reuslt.user)
             })
+            .catch(error=>{
+                setError(error.message)
+            })
     }
     
     const signInUser = (email, password) =>{
@@ -25,7 +29,10 @@ const useFirebase = () => {
         .then(result=>{
             setUser(result.user)
         })
-        
+            .catch(error => {
+                setError(error.message)
+            })
+
     }
 
     const handleGoogleSignIn = () => {
@@ -41,6 +48,9 @@ const useFirebase = () => {
         .then(()=>{
             setUser({})
         })
+            .catch(error => {
+                setError(error.message)
+            })
     }
     useEffect( ()=>{
         onAuthStateChanged(auth, user=>{
@@ -56,7 +66,9 @@ const useFirebase = () => {
         handleGoogleSignIn,
         handleSignOut,
         signUpNewUser,
-        signInUser
+        signInUser,
+        error,
+        setError
     }
 
 }

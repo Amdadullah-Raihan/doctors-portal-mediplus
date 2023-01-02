@@ -8,10 +8,10 @@ import './Login.css'
 
 const Login = () => {
 
-    const { user, handleGoogleSignIn, signInUser } = useFirebase();
+    const { user, handleGoogleSignIn, signInUser,error,setError } = useFirebase();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    const [error, setError] = useState(' ')
+    
 
     const handleSignIn = (e) => {
         e.preventDefault();
