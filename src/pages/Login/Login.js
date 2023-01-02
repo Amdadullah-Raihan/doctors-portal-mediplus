@@ -11,12 +11,12 @@ const Login = () => {
     const { user, handleGoogleSignIn, signInUser } = useFirebase();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    const [error, setError] = useState('')
+    const [error, setError] = useState(' ')
 
     const handleSignIn = (e) => {
         e.preventDefault();
         if(password.length <6){
-            setError("Password must be at least 6 characters long")
+            setError("Password must be at least 6 characters long!")
             return
         }
         signInUser(email, password)
@@ -53,13 +53,13 @@ const Login = () => {
                                 <h3>Log in </h3>
 
                                 <form action="" className='d-flex flex-column ' onSubmit={handleSignIn}>
-                                    <input onChange={handleEmail} className='my-2 p-2 border  rounded ' placeholder='Enter your email' type="text" name="" id="" />
-                                    <input className='my-2 p-2 border rounded' placeholder='Enter your password' type="password" name="" id="" />
+                                    <input onBlur={handleEmail} className='my-2 p-2 border  rounded ' placeholder='Enter your email' type="text" name="" id="" required />
+                                    <input onBlur={handlePassword} className='my-2 p-2 border rounded' placeholder='Enter your password' type="password" name="" id=""  required/>
                                     <div className='text-danger h-auto '>
-                                        {error}
+                                        <p className='text-danger fs-5'>{error}</p>
                                     </div>
 
-                                    <input onChange={handlePassword} className='my-2 p-2 border-none border rounded primary-bg text-light' type="button" name="" value="Log in" id="" />
+                                    <input className='my-2 p-2 border-none border rounded primary-bg text-light' type="submit" name="" value="Log in" id="" />
                                 </form>
                                 <p>Don't have an account?</p>
                                 <p><Link to='/register'> Register here</Link></p>

@@ -10,10 +10,14 @@ const Register = () => {
     
     const [email, setEmail] = useState(' ')
     const [password, setPassword] = useState(' ')
+    const [error ,setError] = useState(' ')
 
     const handleRegister = (e) => {
+
         e.preventDefault();
-        
+        if(password.length<6){
+            setError('Password must be six characters long!')
+        }
        signUpNewUser(email,password)
 
     }
@@ -49,7 +53,9 @@ const Register = () => {
                                 <input className='my-2 p-2 border rounded' onBlur={handleEmail} placeholder='Enter your email' type="text" name="" id="" required />
                                 <input className='my-2 p-2 border rounded' onBlur={handlePassword} placeholder='Enter your password' type="text" name="" id="" />
                                 <input className='my-2 p-2 border rounded' placeholder='Confirm your password' type="text" name="" id="" required />
-
+                                <div>
+                                   <p className='text-danger fs-5'>{error}</p>
+                                </div>
                                 <input className='my-2 p-2 border border-none rounded primary-bg text-light' type="submit" name="" value="Register" id="" required />
                             </form>
 
