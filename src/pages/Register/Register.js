@@ -20,10 +20,10 @@ const Register = () => {
             setError('Password must be six characters long!')
             return;
         }
-        else if (password !== passwordMatch) {
-            setError("Passwords didn't match")
-            return;
-        }
+        // else if (password !== passwordMatch) {
+        //     setError("Passwords didn't match")
+        //     return;
+        // }
         else {
 
             signUpNewUser(email, password)
