@@ -7,7 +7,7 @@ const Newsletter = () => {
             <div className="container row row-cols-1 row-cols-md-2 my-5">
                 <div className='text-lg-start'>
                     <h4>Sign up for newsletter</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio cum nulla facilis dolores deserunt!</p>
+                    <p>Subscribe to our newsletter to get allour news in your inbox. We would like to remind you about the importance of preventative care.</p>
                 </div>
                 <div className=''>
                     <input className='p-3  border border-none rounded ' type="text" name="" id="" placeholder='Your Email Address' />

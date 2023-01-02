@@ -1,32 +1,32 @@
 [
     {   "id":"1",
         "title":"Genaral Treatment",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "description":"General treatment refers to a range of healthcare practices and therapies that are used to address a wide variety of medical conditions. This may include medications, surgeries, physical therapy, and other interventions.",
         "icon":"fa-solid fa-list"
     },
     {   "id":"2",
         "title":"Teeth Whitening",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "description":"Teeth whitening is a cosmetic procedure to lighten teeth. It involves the use of bleaching agents to remove stains and discoloration. It is a safe and effective way to improve the appearance of your smile.",
         "icon":"fa-solid fa-tooth"
     },
     {   "id":"3",
         "title":"Heart Surgery",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "description":"Heart surgery is a medical procedure that involves the repair or replacement of damaged heart tissue. This can be done through a variety of techniques, including open-heart surgery, minimally invasive surgery, and heart transplants. ",
         "icon":"fa-solid fa-heart-pulse"
     },
     {   "id":"4",
         "title":"Ear Treatment",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "description":"Ear treatment refers to medical care and interventions to address issues with the ear and related structures. This may include medications, hearing aids, surgeries, and other therapies to treat conditions such as ear infections, hearing loss, and balance disorders.",
         "icon":"fa-solid fa-ear-listen"
     },
     {   "id":"5",
         "title":"Vission Treatment",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "description":"Vision treatment refers to medical care and interventions to address issues with the eyes and vision. This may include eyeglasses, contact lenses, medications, and surgeries to treat conditions such as nearsightedness, farsightedness, and astigmatism.",
         "icon": "fa-solid fa-eye"
     },
     {   "id":"6",
         "title":"Blood Transfusion",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.",
+        "description":"Blood transfusion is a medical procedure in which blood or blood components are transferred from one person (the donor) into the bloodstream of another person (the recipient). Blood transfusions may be necessary to treat a variety of conditions, such as anemia, bleeding disorders, and shock.",
         "icon": "fa-solid fa-hand-holding-medical"
     }
 ]

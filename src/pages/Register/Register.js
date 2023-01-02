@@ -10,6 +10,7 @@ const Register = () => {
     
     const [email, setEmail] = useState(' ')
     const [password, setPassword] = useState(' ')
+    const [passwordMatch, setPasswordMatch] = useState(' ')
     
 
     const handleRegister = (e) => {
@@ -17,8 +18,17 @@ const Register = () => {
         e.preventDefault();
         if(password.length<6){
             setError('Password must be six characters long!')
+            return;
         }
-       signUpNewUser(email,password)
+        else if(password !== passwordMatch){
+            setError("Passwords didn't match")
+            return;
+        }
+        else{
+
+            signUpNewUser(email,password)
+        }   
+   
 
     }
     const handleEmail = (e) =>{
@@ -28,6 +38,9 @@ const Register = () => {
     const handlePassword = (e) =>{
         setPassword(e.target.value)
        
+    }
+    const handlePasswordMatch = (e) =>{
+        setPasswordMatch(e.target.value)  
     }
 
     return (
@@ -56,14 +69,14 @@ const Register = () => {
                                 <div>
                                    <p className='text-danger fs-5'>{error}</p>
                                 </div>
-                                <input className='my-2 p-2 border border-none rounded primary-bg text-light' type="submit" name="" value="Register" id="" required />
+                                <input onBlur={handlePasswordMatch} className='my-2 p-2 border border-none rounded primary-bg text-light' type="submit" name="" value="Register" id="" required />
                             </form>
 
                             <p>Already Registered?</p>
                             <p><Link to='/login'> Log in here</Link></p>
                             <hr className='w-100' />
                             <p>or</p>
-                            <button onClick={handleGoogleSignIn} className="btn border border-primary  position-relative d-flex align-items-center rounded-pill p-2"> <img src={logo} alt="" className="google-logo start-0 position absolute" />  <p className='d-flex w-100 justify-content-center align-items-center'> Register with Google</p></button>
+                            <button onClick={handleGoogleSignIn} className="btn border border-primary  position-relative d-flex align-items-center rounded-pill p-2"> <img src={logo} alt="" className="google-logo start-0 position absolute" />  <p className='d-flex w-100 justify-content-center align-items-center'> Continue with Google</p></button>
                         </div>
                     </div>
                 </div>

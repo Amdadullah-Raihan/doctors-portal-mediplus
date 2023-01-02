@@ -10,7 +10,7 @@ const EmergencyContact = () => {
                 </div>
                 <div className='emg-contact-info'>
                     <h1 className='text-light'>Do you need Emergency Medical Care? Call @ +880123456789</h1>
-                    <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet dicta illum atque corporis in ad laudantium fuga est nobis?</p>
+                    <p className='text-light'>It is important to remember that medical emergencies can be serious and require immediate attention. Don't delay seeking help in the event of a medical emergency.</p>
                     <div className=''>
                         <button className='white-btn'>Contact Now</button>
                         <button className='btn text-light border p-2 '>Learn More <i className='fa-solid fa-arrow-right '></i></button>

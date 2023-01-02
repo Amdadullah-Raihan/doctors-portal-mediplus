@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="transparent-div"></div>
             <div className="hero-contents container">
                 <h1 >We provide <span className='primary-color '>medical</span> services that everyone can <span className='primary-color'>trust!!</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis, facilis fugit omnis iure magni.</p>
+                <p>Helping you make informed decisions about your health</p>
                 <div className="hero-btn-container">
                     <button className='primary-btn text-light px-4 py-2'>Get Appointment</button>
                     <button className='secondary-btn text-light px-3 py-2'>Learn More</button>

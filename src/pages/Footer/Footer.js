@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='col my-5'>
                     <h3 className='text-start'>About Us</h3>
                     <hr className='w-25 '/>
-                    <p className='text-light'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fugiat sint soluta iusto est in ad porro assumenda quo nihil minima impedit tempore ex, repellat unde, nemo ullam praesentium inventore.</p>
+                    <p className='text-light'>We are a organization that offers healthcare services to patients. We offer expert doctors, amazing hospital and clinics, and other healthcare facilites.We diagnose and treat a variety of medical treatments.</p>
                     <div className='text-start social-icons'>
                         <i className='fa fa-facebook mx-3  border border-light rounded-circle'></i>
                         <i className='fa fa-youtube mx-3  border border-light rounded-circle'></i>
@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className='col my-5'>
                     <h3 className='text-start'>Newsletter</h3>
                     <hr className='w-25 ' />
-                    <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                    <p>Subscribe to our newsletter to get allour news in your inbox. We would like to remind you about the importance of preventative care.</p>
                     <div className='footer-news-letter border d-flex '>
                         <input type="text" className='w-100 border  border-none h-auto p-2 primary-bg' name="" id="" placeholder='Your Email Adsress' />
                         <i className='fa fa-send p-3 primary-color bg-light'></i>

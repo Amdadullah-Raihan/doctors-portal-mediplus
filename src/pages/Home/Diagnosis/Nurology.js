@@ -7,17 +7,17 @@ const Nurology = () => {
             <div className='diag-left text-start'>
                 <h2>Nurology</h2>
                 <hr className='w-25' />
-                <p className='primary-color mb-4 fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat culpa quae quo voluptates debitis nemo!</p>
+                <p className='primary-color mb-4 fw-bold'>Unravelling the mysteries of the brain and nervous system: A closer look at neurology!</p>
 
-                <p className='text-secondary mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas iusto quibusdam tempora aperiam neque similique voluptas quo at, atque ipsa ipsum alias commodi accusantium?</p>
+                <p className='text-secondary mb-4'>Neurology is a medical specialty that focuses on the diagnosis, treatment, and management of conditions and diseases of the brain, spinal cord, and nerves. </p>
 
-                <p> <i class="fa-solid fa-circle-check primary-color me-2"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, iste?</p>
-                <p> <i class="fa-solid fa-circle-check primary-color me-2"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, iste?</p>
-                <p> <i class="fa-solid fa-circle-check primary-color me-2"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, iste?</p>
+                <p> <i class="fa-solid fa-circle-check primary-color me-2"></i> Neurology is a medical specialty that focuses on the brain, spinal cord, and nerves.</p>
+                <p> <i class="fa-solid fa-circle-check primary-color me-2"></i> Neurologists are medical doctors who specialize in this area of medicine.</p>
+                <p> <i class="fa-solid fa-circle-check primary-color me-2"></i> Neurology involves the diagnosis, treatment, and management of a wide range of conditions.</p>
 
             </div>
-            <div className='diag-right'>
-                <img className='h-100  w-100' src={diagnosis} alt="" />
+            <div className='diag-right d-flex align-items-center'>
+                <img className='h-auto  w-100' src={diagnosis} alt="" />
             </div>
         </div>
     );
