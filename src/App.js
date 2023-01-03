@@ -19,6 +19,7 @@ import Dentistry from './pages/Home/Diagnosis/Dentistry';
 import Gastroenterology from './pages/Home/Diagnosis/Gastroenterology';
 import Orthopedagogy from './pages/Home/Diagnosis/Orthopedagogy';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 
 
 
@@ -43,7 +44,7 @@ function App() {
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/register' element={<Register></Register>}></Route>
             <Route path='/doctors' element={<Doctors></Doctors>}></Route>
-            <Route path='/appointment' element={<Appointment></Appointment>}></Route>
+            <Route path='/appointment' element={<PrivateRoute><Appointment></Appointment></PrivateRoute>}></Route>
 
             <Route path='*' element={<NotFound></NotFound>}></Route>
           </Routes>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 import googleLogo from '../../images/GOOG-0ed88f7c.png'
@@ -9,9 +9,12 @@ import './Login.css'
 
 const Login = () => {
 
-    const { user, handleGoogleSignIn, signInUser,error,setError } = useAuth();
+    const { user,setUser, handleGoogleSignIn, signInUser,error,setError } = useAuth();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+    const location = useLocation();
+    const navigate = useNavigate();
+    const redirect_uri = location.state?.from || '/'
     
 
     const handleSignIn = (e) => {
@@ -32,6 +35,14 @@ const Login = () => {
 
     }
 
+    const handleRedirect = () =>{
+        handleGoogleSignIn()
+            .then(result => {
+                setUser(result.user)
+                navigate(redirect_uri)
+            })
+    }
+
     return (
         
         <>
@@ -41,7 +52,7 @@ const Login = () => {
                         <div className='my-5 py-5'>
                             <i className='fa-solid fa-circle-check text-success fs-1'></i>
                             <h1 className='text-success mb-5'>Log in Successful!</h1>
-                            <Link to='/'> <button className='btn btn-success'>Go to home</button></Link>
+                            <Link to={redirect_uri}> <button className='btn btn-success'>Continue</button></Link>
                         </div>
                     </div>
                     :
@@ -51,7 +62,7 @@ const Login = () => {
 
                             </div>
                             <div className=' my-5 h-100 '>
-                                <h3>Log in </h3>
+                                <h2>Log in </h2>
 
                                 <form action="" className='d-flex flex-column ' onSubmit={handleSignIn}>
                                     <input onBlur={handleEmail} className='my-2 p-2 border  rounded ' placeholder='Enter your email' type="text" name="" id="" required />
@@ -66,7 +77,7 @@ const Login = () => {
                                 <p><Link to='/register'> Register here</Link></p>
                                 <hr className='w-100' />
                                 <p>or</p>
-                                <button onClick={handleGoogleSignIn} className='extra-login-btn'> <img src={googleLogo} alt='' className='google-logo' />Continue with Google <></></button>
+                                <button onClick={handleRedirect} className='extra-login-btn'> <img src={googleLogo} alt='' className='google-logo' />Continue with Google <></></button>
                             </div>
                         </div>
                     </div>

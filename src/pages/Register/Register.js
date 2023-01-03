@@ -61,7 +61,7 @@ const Register = () => {
 
                             </div>
                             <div className=' my-5  h-100 d-flex flex-column '>
-                                <h3> Register </h3>
+                                <h2> Register </h2>
                                 <form className='d-flex flex-column' action="" onSubmit={handleRegister}>
                                     <input className='my-2 p-2 border rounded' onBlur={handleEmail} placeholder='Enter your email' type="text" name="" id="" required />
                                     <input className='my-2 p-2 border rounded' onBlur={handlePassword} placeholder='Enter your password' type="text" name="" id="" />
