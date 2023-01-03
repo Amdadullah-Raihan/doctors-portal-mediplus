@@ -18,15 +18,18 @@ import Nurology from './pages/Home/Diagnosis/Nurology';
 import Dentistry from './pages/Home/Diagnosis/Dentistry';
 import Gastroenterology from './pages/Home/Diagnosis/Gastroenterology';
 import Orthopedagogy from './pages/Home/Diagnosis/Orthopedagogy';
+import AuthProvider from './context/AuthProvider';
 
 
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header></Header>
-        <Routes>
+      <AuthProvider>
+
+        <BrowserRouter>
+          <Header></Header>
+          <Routes>
             <Route exact path='/' element={<Home></Home>}>
               <Route path='/' element={<CardiacClinic></CardiacClinic>}></Route>
               <Route path='link-1' element={<CardiacClinic></CardiacClinic>}></Route>
@@ -43,10 +46,11 @@ function App() {
             <Route path='/appointment' element={<Appointment></Appointment>}></Route>
 
             <Route path='*' element={<NotFound></NotFound>}></Route>
-        </Routes>
-        <Newsletter></Newsletter>
-        <Footer></Footer>
-      </BrowserRouter>
+          </Routes>
+          <Newsletter></Newsletter>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

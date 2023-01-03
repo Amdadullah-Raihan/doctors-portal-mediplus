@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 import googleLogo from '../../images/GOOG-0ed88f7c.png'
 import './Login.css'
@@ -8,7 +9,7 @@ import './Login.css'
 
 const Login = () => {
 
-    const { user, handleGoogleSignIn, signInUser,error,setError } = useFirebase();
+    const { user, handleGoogleSignIn, signInUser,error,setError } = useAuth();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     
