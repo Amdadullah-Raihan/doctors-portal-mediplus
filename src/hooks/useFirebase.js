@@ -17,6 +17,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(reuslt => {
                 setUser(reuslt.user)
+                
             })
             .catch(error=>{
                 setError(error.message)

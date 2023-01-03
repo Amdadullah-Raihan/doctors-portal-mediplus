@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
 import googleLogo from '../../images/GOOG-0ed88f7c.png'
 import './Register.css'
@@ -11,6 +11,9 @@ const Register = () => {
     const [email, setEmail] = useState(' ')
     const [password, setPassword] = useState(' ')
     const [passwordMatch, setPasswordMatch] = useState(' ')
+    const location = useLocation();
+    const navigate = useNavigate();
+    const redirect_uri = location.state?.from || '/'
 
 
     const handleRegister = (e) => {
@@ -27,6 +30,7 @@ const Register = () => {
         else {
 
             signUpNewUser(email, password)
+            
         }
 
 
@@ -52,7 +56,7 @@ const Register = () => {
                         <div className='my-5 py-5'>
                             <i className='fa-solid fa-circle-check text-success fs-1'></i>
                             <h1 className='text-success mb-5'>You are registered!</h1>
-                            <Link to='/'> <button className='btn btn-success'>Go to home</button></Link>
+                            <Link to={redirect_uri}> <button className='btn btn-success'>Continue</button></Link>
                         </div>
                     </div>
                     : <div className='container my-lg-5 '>
