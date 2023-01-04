@@ -68,6 +68,16 @@ const Header = () => {
                                 Appointments
                             </NavLink>
                         </Nav.Link>
+                        <Nav.Link>
+                            <NavLink
+                                to="/about-us"
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }
+                            >
+                               About Us
+                            </NavLink>
+                        </Nav.Link>
 
 
 
