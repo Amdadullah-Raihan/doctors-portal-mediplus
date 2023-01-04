@@ -21,6 +21,8 @@ import Orthopedagogy from './pages/Home/Diagnosis/Orthopedagogy';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import About from './pages/AboutPage/About';
+import ServiceDetails from './pages/Services/ServiceDetails';
+import ServiceProvider from './context/ServiceProvider';
 
 
 
@@ -28,31 +30,33 @@ function App() {
   return (
     <div className="App">
       <AuthProvider>
+        <ServiceProvider>
+          <BrowserRouter>
+            <Header></Header>
+            <Routes>
+              <Route exact path='/' element={<Home></Home>}>
+                <Route path='/' element={<CardiacClinic></CardiacClinic>}></Route>
+                <Route path='link-1' element={<CardiacClinic></CardiacClinic>}></Route>
+                <Route path='link-2' element={<Nurology></Nurology>}></Route>
+                <Route path='link-3' element={<Dentistry></Dentistry>}></Route>
+                <Route path='link-4' element={<Gastroenterology></Gastroenterology>}></Route>
+                <Route path='link-5' element={<Orthopedagogy></Orthopedagogy>}></Route>
+              </Route>
+              <Route path='/home' element={<Home></Home>}></Route>
+              <Route path='/services' element={<Services></Services>}></Route>
+              <Route path='/service/:id' element={<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>}></Route>
+              <Route path='/login' element={<Login></Login>}></Route>
+              <Route path='/register' element={<Register></Register>}></Route>
+              <Route path='/doctors' element={<Doctors></Doctors>}></Route>
+              <Route path='/appointment' element={<PrivateRoute><Appointment></Appointment></PrivateRoute>}></Route>
+              <Route path='/about-us' element={<About></About>}></Route>
 
-        <BrowserRouter>
-          <Header></Header>
-          <Routes>
-            <Route exact path='/' element={<Home></Home>}>
-              <Route path='/' element={<CardiacClinic></CardiacClinic>}></Route>
-              <Route path='link-1' element={<CardiacClinic></CardiacClinic>}></Route>
-              <Route path='link-2' element={<Nurology></Nurology>}></Route>
-              <Route path='link-3' element={<Dentistry></Dentistry>}></Route>
-              <Route path='link-4' element={<Gastroenterology></Gastroenterology>}></Route>
-              <Route path='link-5' element={<Orthopedagogy></Orthopedagogy>}></Route>
-            </Route>
-            <Route path='/home' element={<Home></Home>}></Route>
-            <Route path='/services' element={<Services></Services>}></Route>
-            <Route path='/login' element={<Login></Login>}></Route>
-            <Route path='/register' element={<Register></Register>}></Route>
-            <Route path='/doctors' element={<Doctors></Doctors>}></Route>
-            <Route path='/appointment' element={<PrivateRoute><Appointment></Appointment></PrivateRoute>}></Route>
-            <Route path='/about-us' element={<About></About>}></Route>
-
-            <Route path='*' element={<NotFound></NotFound>}></Route>
-          </Routes>
-          <Newsletter></Newsletter>
-          <Footer></Footer>
-        </BrowserRouter>
+              <Route path='*' element={<NotFound></NotFound>}></Route>
+            </Routes>
+            <Newsletter></Newsletter>
+            <Footer></Footer>
+          </BrowserRouter>
+        </ServiceProvider>
       </AuthProvider>
     </div>
   );

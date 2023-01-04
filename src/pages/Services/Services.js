@@ -1,11 +1,12 @@
 import React from 'react';
 import Service from './Service';
 import useServices from '../../hooks/useServices';
+import useService from '../../hooks/useService';
 
 
 const Services = () => {
 
-    const {services} = useServices();
+    const {services} = useService();
     
     return (
         <div className='container my-5 py-5'>

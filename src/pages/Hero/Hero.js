@@ -4,11 +4,14 @@ import './Hero.css'
 
 
 const Hero = () => {
+
+   
+
     return (
         <div className='hero-section'>
             <div className="transparent-div"></div>
-             <div className="row row-cols-1 row-cols-lg-2">
-                <div className="hero-left container">
+             <div className="row row-cols-1 row-cols-lg-2 ">
+                <div className="hero-left px-lg-5">
                     <h1 >We provide <span className='primary-color '>medical</span> services that everyone can <span className='primary-color'>trust!!</span></h1>
                     <p>Helping you make informed decisions about your health</p>
                     <div className="hero-btn-container">

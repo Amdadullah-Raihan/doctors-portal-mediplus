@@ -3,14 +3,20 @@ import { useEffect, useState } from "react";
 
 const useServices = () => {
     const [services, setServices] = useState();
+    const [isLoading, setIsLoading] = useState(true)
+
     useEffect(() => {
-        fetch('./services.json')
+        setIsLoading(true)
+        fetch('/services.json')
             .then(res => res.json())
-            .then(data => setServices(data))
+            .then(data => {
+                setServices(data)
+                setIsLoading(false)
+            })
     }, [])
 
     return{
-        services, setServices
+        services, setServices,isLoading
     }
 
 }

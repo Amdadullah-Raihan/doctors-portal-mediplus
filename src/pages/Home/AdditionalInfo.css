@@ -1,6 +1,7 @@
 .additional-info-section p, h3, h5{
     color: white;
     opacity: 1;
+    
 }
 .additional-info-section{
     display: grid;
@@ -27,7 +28,7 @@
          
     }
     .additional-info-container{
-       height: 800px;
+       height: 950px;
     }
 }
 /* @media screen and (max-width:992px) {
