@@ -16,4 +16,4 @@
 * Visitors can also see all of available doctors and services 
 
 ## Used Technologies
-`HTML` `CSS` `JavaScript` `React.js` `Bootstrap` `React Bootstrap` `Firebase` `React-Router` 
+`HTML` `CSS` `JavaScript` `React.js` `Bootstrap` `React Bootstrap` `Firebase` `React-Router` `React Context API`
